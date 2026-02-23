@@ -27,6 +27,11 @@ data/cache/
 uploads/
 outputs/
 
+# Confidential Documents
+data/Disciplinary cases/
+data/APAR*.pdf
+data/*.pdf
+
 # Frontend
 frontend/.next/
 frontend/node_modules/
