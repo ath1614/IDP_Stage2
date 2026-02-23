@@ -269,23 +269,6 @@ LLM_VM_IP=<your-llm-vm-ip>
 
 ---
 
-## 🤝 Support
-
-For technical support, deployment assistance, or custom requirements:
-- **Email**: support@yellowsense.in
-- **Documentation**: See `docs/` folder
-- **Issues**: GitHub Issues (for open-source components)
-
----
-
-## 📝 License
-
-**Proprietary** - YellowSense Technologies Private Limited
-
-This software is proprietary and confidential. Unauthorized copying, distribution, or use is strictly prohibited.
-
----
-
 ## 🙏 Acknowledgments
 
 Built with:
