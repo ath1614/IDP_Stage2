@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+venv_*/
+ENV/
+env/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Environment
+.env
+.env.local
+
+# Data & Outputs
+data/output/
+data/cache/
+uploads/
+outputs/
+
+# Frontend
+frontend/.next/
+frontend/node_modules/
+NFRA-Frontend/.next/
+NFRA-Frontend/node_modules/
+
+# Logs
+*.log
+logs/
+
+# Test outputs
+tests/sample_outputs/
+
+# Temporary files
+*.tmp
+*.bak
+*.zip

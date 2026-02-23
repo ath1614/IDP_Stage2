@@ -1,0 +1,6 @@
+surya-ocr==0.17.1
+transformers==4.56.1
+accelerate
+pymupdf
+flask
+opencv-python-headless

@@ -1,0 +1,15 @@
+flask
+pillow
+surya-ocr==0.17.1
+transformers==4.56.1
+pymupdf
+requests
+reportlab
+accelerate
+jiwer
+rouge-score
+scikit-learn
+bert-score
+evaluate
+python-dotenv
+pdf2docx

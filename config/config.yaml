@@ -1,0 +1,70 @@
+# NFRA Project Configuration
+
+# NFRA VM Endpoints
+nfra:
+  ocr_vm:
+    ip: 34.47.203.146
+    port: 8000
+    url: "http://34.47.203.146:8000"
+    gpu: "NVIDIA Tesla T4"
+    
+  llm_vm:
+    ip: 34.180.45.142
+    port: 8000
+    url: "http://34.180.45.142:8000"
+    gpu: "NVIDIA Tesla T4"
+    model: "Qwen/Qwen2.5-14B-Instruct-AWQ"
+    
+  vector_db:
+    type: "milvus"
+    host: "127.0.0.1"
+    port: 19530
+    
+# OCR Configuration
+ocr:
+  version: "0.17.1"
+  dpi: 300  # For financial documents (300 DPI for clarity)
+  max_dimension: 1200
+  batch_size: 3
+  timeout: 300
+  confidence_threshold: 0.7
+  
+# LLM Configuration
+llm:
+  model: "Qwen/Qwen2.5-14B-Instruct-AWQ"
+  max_tokens: 2048
+  temperature: 0.1
+  timeout: 300
+  
+# NFRA-Specific Settings
+processing:
+  document_types:
+    - "Annual Report"
+    - "Balance Sheet"
+    - "Audit Report"
+    - "Cash Flow Statement"
+    - "Notes to Accounts"
+    
+  extract_financial_data: true
+  extract_compliance_data: true
+  generate_embeddings: true
+  
+# Regulatory Frameworks
+compliance:
+  frameworks:
+    - "IndAS"
+    - "SEBI"
+    - "RBI"
+    - "BRSR"
+    
+  validation_enabled: true
+  confidence_threshold: 0.85
+  
+# Output Configuration
+output:
+  format: 
+    - "json"
+    - "docx"
+  include_source_references: true
+  include_confidence_scores: true
+  export_location: "./outputs/nfra"
